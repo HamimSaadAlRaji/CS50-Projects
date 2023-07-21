@@ -33,11 +33,11 @@
 
 
 <div>
-    <img src="{{listing.image}}"  class="rounded mx-auto d-block" size="200px" alt="{{listing.title}}"><br>
+    <img src="{{listing.image}}"  class="rounded mx-auto d-block" width="400" height="400" alt="{{listing.title}}"><br>
     <h3 align="center">{{listing.title}}</h3>
     <br>
     <h5>Description: {{listing.description}}</h5>
-    <h5 style="display: inline;">Listed By: </h5> <h5 style="display: inline; color: rgb(5, 171, 38);">{{listing.owner}}</h5>&nbsp;
+    <h5 style="display: inline;">Listed By: </h5> <h5 style="display: inline; color: rgb(5, 171, 38);">{{listing.owner}}</h5><br>
     <h5 style="display: inline;">Highest Bid: </h5> <h5 style="display: inline; color: rgb(171, 41, 5);">${{listing.price.bid}}</h5><br><br>
     {% if user.is_authenticated %}
     {% if user.is_authenticated and listing.isActive %}
